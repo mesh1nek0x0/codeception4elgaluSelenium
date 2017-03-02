@@ -15,8 +15,8 @@ class ExampleCest
     public function tryToTest( TestTester $I)
     {
       $I->amOnPage('/my/-/login/');
-      $I->appendField('//*[@id="login_id"]', 'mesh1neko');
-      $I->appendField('//*[@id="password"]', 'pass');
+      $I->appendField('//*[@id="login_id"]', $I->getConfig('username'));
+      $I->appendField('//*[@id="password"]', $I->getConfig('password'));
       $I->makeScreenshot('login-page');
     }
 }
