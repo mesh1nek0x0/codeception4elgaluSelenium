@@ -1,0 +1,13 @@
+{
+    "name": "mesh1neko/codeception",
+    "require": {
+        "codeception/codeception": "^2.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mesh1neko",
+            "email": ""
+        }
+    ]
+}

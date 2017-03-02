@@ -1,0 +1,10 @@
+class_name: TestTester
+modules:
+    enabled:
+      - WebDriver:
+             url: 'http://www.dmm.com/'
+             host: 'grid'
+             browser: firefox
+             port: 24444
+      - \Helper\Test
+      - \Helper\ConfigHelper

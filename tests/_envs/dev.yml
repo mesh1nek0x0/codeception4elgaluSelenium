@@ -1,0 +1,8 @@
+# `dev` environment config goes here
+modules:
+    enabled:
+      - WebDriver:
+             url: 'http://www.dmm.com/'
+             host: 'localhost'
+             browser: firefox
+             port: 4444
