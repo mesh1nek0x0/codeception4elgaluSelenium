@@ -3,7 +3,7 @@ modules:
     enabled:
       - WebDriver:
              url: 'http://www.dmm.com/'
-             host: 'grid'
+             host: 'selenium'
              browser: firefox
              port: 24444
       - \Helper\Test
