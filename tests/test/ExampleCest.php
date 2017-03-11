@@ -11,12 +11,23 @@ class ExampleCest
     {
     }
 
-    // tests
+    /**
+     * @group hi
+     **/
     public function tryToTest( TestTester $I)
     {
       $I->amOnPage('/my/-/login/');
       $I->appendField('//*[@id="login_id"]', $I->getConfig('username'));
       $I->appendField('//*[@id="password"]', $I->getConfig('password'));
       $I->makeScreenshot('login-page');
+    }
+    
+    /**
+     * @group bye
+     **/
+    public function tryToTest( TestTester $I)
+    {
+      $I->amOnPage('my/-/email-application/');
+      $I->makeScreenshot('email-application-page');
     }
 }
