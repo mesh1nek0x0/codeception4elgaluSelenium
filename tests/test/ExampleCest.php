@@ -14,7 +14,7 @@ class ExampleCest
     /**
      * @group hi
      **/
-    public function tryToTest( TestTester $I)
+    public function hiTest( TestTester $I)
     {
       $I->amOnPage('/my/-/login/');
       $I->appendField('//*[@id="login_id"]', $I->getConfig('username'));
@@ -25,7 +25,7 @@ class ExampleCest
     /**
      * @group bye
      **/
-    public function tryToTest( TestTester $I)
+    public function byeTest( TestTester $I)
     {
       $I->amOnPage('my/-/email-application/');
       $I->makeScreenshot('email-application-page');
